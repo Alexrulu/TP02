@@ -1,0 +1,92 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+p { /* Campos de texto */
+    font-size: 12px;
+}
+h2 { /* Titulares */
+    font-size: 24px;
+}
+.font-size-prices{ /* Precios */
+    font-size: 18px;
+}
+.font-size-discounts{ /* Descuentos */
+    font-size: 16px;
+}
+.font-size-description{ /* Descripciones*/
+    font-size: 16px;
+}
+
+/* LOGIN */
+.main-login {
+    background-color:#ebebeb;
+    padding: 20px 0;
+    text-align: center;
+}
+.main-login>form>div>input {
+    padding: 5px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+.main-login>form>div input[type="submit"] {
+    width: 85vw;
+    background-color:#1259c3;
+    color: white;
+}
+/* REGISTER */
+.register-main{
+    background-color: #ebebeb;
+}
+.register-div {
+    background-color:#ebebeb;
+    padding: 10px 0;
+    text-align: center;
+}
+.register-div>input {
+    padding: 10px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+.register-h2 {
+    margin: 0 7.5vw;
+}
+.register-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 7.5vw;
+}
+.register-interest {
+    margin: 20px 7.5vw;
+}
+.register-interest input {
+    margin-right: 10px;
+}
+.input-user-photo {
+    margin: 20px 7.5vw;
+    width: 85vw;
+}
+.register-div>input[type="submit"] {
+    background-color:#1259c3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.register-div>input[type="reset"] {
+    background-color:#03264C;
+    color:#ebebeb;
+    padding: 10px 0;
+    text-align: center;
+}
