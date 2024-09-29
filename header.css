@@ -38,8 +38,37 @@ header>nav>ul>li>a{
     display:inline-block;
     color: white;
     background-color:#1259c3;
-    border: solid #1259c3;
+    border: 2px solid #1259c3;
     padding: 4px 6px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+header>nav {
+    display: none;
+}
+
+@media screen and (min-width:768px) { /* Tablet */
+    .burger-menu {
+        display: none !important;
+    }
+    header>form input{
+        width: 60vw;
+    }
+    header>nav {
+        display:flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    header>nav ul {
+        display:inline-flex;
+        gap: 15px;
+    }
+    li {
+        list-style: none;
+    }
+}
+@media screen and (min-width:1024px) { /* achicar el input */
+    header>form input{
+        width: 50vw;
+    }
 }

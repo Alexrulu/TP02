@@ -23,11 +23,32 @@ h2 { /* Titulares */
 }
 .font-size-discounts{ /* Descuentos */
     font-size: 16px;
+    color: #39b54a;
 }
 .font-size-description{ /* Descripciones*/
     font-size: 16px;
 }
-
+/* HOME */
+.main-home {
+    text-align: center;
+    background-color: #ebebeb;
+}
+.main-h2 {
+    color: #666;
+    padding: 10px;
+}
+.main-section-article {
+    display: inline-block;
+}
+.main-section-article-data {
+    background-color: white;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: -3px;
+}
+div>b {
+    color: #666;
+}
 /* LOGIN */
 .main-login {
     background-color:#ebebeb;
@@ -35,7 +56,7 @@ h2 { /* Titulares */
     text-align: center;
 }
 .main-login>form>div>input {
-    padding: 5px ;
+    padding: 10px ;
     width: 85vw;
     border: none;
     margin: 20px 0;
@@ -74,6 +95,7 @@ h2 { /* Titulares */
 .register-interest input {
     margin-right: 10px;
 }
+
 .input-user-photo {
     margin: 20px 7.5vw;
     width: 85vw;
@@ -89,4 +111,132 @@ h2 { /* Titulares */
     color:#ebebeb;
     padding: 10px 0;
     text-align: center;
+}
+.fa-truck {
+    display: none;
+    color: white;
+}
+
+@media screen and (min-width:768px) { /* Tablet */
+    main {
+        padding: 20px 10vw ;
+        background-color:#ebebeb;
+        margin: auto;
+        text-align: center;
+    }
+    section { /* Se evita el borde derecho vacio */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .main-h2 {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .main-h2-offers {
+        margin-top: 20px;
+    }
+    .main-section-article {
+        width: 300px;
+        box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    }
+    .main-section-article-data {
+        background-color: white;
+        text-align: left;
+        padding: 10px 15px;
+        border-top: solid 1px #ebebeb;
+        margin-top: -3px;
+        margin-bottom: 0;
+    }
+    .main-section-article-data>div{
+        margin-top: 20px;
+        margin-left: -75px;
+    }
+    .main-section-article>div b {
+    margin-left: 75px;
+    color: #666;
+    }
+    .fa-truck {
+        display: inline-block;
+        color: #39b54a;
+        padding: 12px 10px;
+        border: solid 1px;
+        border-radius: 100%;
+        margin: 0 10px 10px 0;
+    }
+    /* REGISTER */
+    .register-main {
+        padding: 20px 0;
+    }
+    .register-userphoto {
+        text-align: left;
+    }
+    .register-userphoto input {
+        margin: 20px 0;
+    }
+    .register-h2 {
+        text-align: left;
+        margin: 0;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 0 -7.5vw;
+    }
+    .register-interest-father input {
+        margin-left: -40px;
+    }
+    .register-label {
+        margin: 20px 0;
+    }
+    .register-main {
+        margin: 0 200px;
+    }
+    body {
+        background-color: #ebebeb;
+    }
+    .register-main input {
+        width: 100%;
+    }
+    /* LOGIN */
+    .main-login>form>div {
+        display: flex;
+        margin: 0 200px;
+    }
+}
+@media screen and (min-width:1024px) { /* Desktop - Evitamos inputs muy largos */
+    .register-main {
+        margin: 0 25vw;
+    }
+    .register-div {
+        width: 50vw;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 0;
+        width: 50vw;
+    }
+    .register-h2 {
+        width: 50vw;
+    }
+    .register-label {
+        width: 50vw;
+    }
+    .input-user-photo {
+        width: 50vw;
+        margin: 0;
+    }
+    .register-userphoto {
+        width: 50vw;
+    }
+    .register-interest {
+        width: 50vw;
+        margin: 0;
+    }
+    .user-profile-container {
+        width: 50vw;
+    }
+    .main-login  {
+        width: 75vw; 
+    }
 }

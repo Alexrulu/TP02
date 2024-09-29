@@ -20,3 +20,15 @@ footer>section>div i {
 .footer-copyright {
     color: #666;
 }
+
+@media screen and (min-width:768px) { /* TABLET */
+    html {
+        background-color: white;
+    }
+    footer>section{
+        display: inline-block;
+    }
+    footer {
+        background-color: white;
+    }
+}

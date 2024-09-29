@@ -32,10 +32,10 @@
                 <li><a href="login.html">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a></li>
                 <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
-            <div class="burger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <main class="register-main">
         <form action="home.html"> <!-- sin method="post" porque da error en la pagina-->
@@ -55,7 +55,7 @@
             <div class="register-div">
                 <input type="text" name="home_address" placeholder="Domicilio">
             </div>
-            <div>
+            <div class="user-profile-container">
                 <h2 class="register-h2">Perfil del usuario</h2>
                 <div class="register-label">
                     <label for="comprador">Comprador</label>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <h2 class="register-h2">Intereses</h2>
-            <div>
+            <div class="register-interest-father">
                 <div class="register-interest">
                     <input type="checkbox" name="category[]" id="electro" value="electro">
                     <label for="electro">Electro</label>
@@ -87,7 +87,7 @@
                     <label for="vida_sana">Vida sana</label>
                 </div>
             </div>
-            <div>
+            <div class="register-userphoto">
                 <label for="user_photo"><h2 class="register-h2">Foto de usuario</h2></label>
                 <input class="input-user-photo" type="file" name="user_photo" id="user_photo" accept="image/*">
             </div>
