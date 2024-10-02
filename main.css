@@ -48,16 +48,19 @@ h2 { /* Titulares */
     width: 300px;
     margin-bottom: 10px;
     margin-top: 1px;
-}
-.main-section-article-data>div{
-    padding: 10px 0;
+    text-align: left;
+    padding: 10px;
 }
 div>b {
     color: #666;
 }
 .fa-truck {
-    display: none;
-    color: white;
+    display: inline-block;
+    color: #39b54a;
+    padding: 12px 10px;
+    border: solid 1px;
+    border-radius: 100%;
+    margin: 0 10px 10px 0;
 }
 /* LOGIN */
 .main-login {
@@ -165,14 +168,6 @@ div>b {
     .main-section-article>div b {
     margin-left: 75px;
     color: #666;
-    }
-    .fa-truck {
-        display: inline-block;
-        color: #39b54a;
-        padding: 12px 10px;
-        border: solid 1px;
-        border-radius: 100%;
-        margin: 0 10px 10px 0;
     }
     /* REGISTER */
     .register-main {
