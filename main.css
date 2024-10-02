@@ -130,7 +130,7 @@ div>b {
         padding-top: 0;
     }
     main {
-        padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile entonces cuando estamos a punto de cambiar a tablet-design se muestra el "fa-truck"*/
+        padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile */
         background-color:#ebebeb;
         margin: auto;
         text-align: center;
