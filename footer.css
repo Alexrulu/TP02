@@ -1,0 +1,34 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+footer {
+    text-align: center;
+}
+footer>section div {
+    margin: 30px;
+}
+footer>section>div i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.footer-copyright {
+    color: #666;
+}
+
+@media screen and (min-width:768px) { /* TABLET */
+    html {
+        background-color: white;
+    }
+    footer>section{
+        display: inline-block;
+    }
+    footer {
+        background-color: white;
+    }
+}

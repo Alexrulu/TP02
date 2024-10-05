@@ -1,0 +1,246 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+p { /* Campos de texto */
+    font-size: 12px;
+}
+h2 { /* Titulares */
+    font-size: 24px;
+}
+.font-size-prices{ /* Precios */
+    font-size: 18px;
+    padding-top: 10px;
+}
+.font-size-discounts{ /* Descuentos */
+    font-size: 16px;
+    color: #39b54a;
+}
+.font-size-description{ /* Descripciones*/
+    font-size: 16px;
+}
+/* HOME */
+.main-home {
+    text-align: center;
+    background-color: #ebebeb;
+}
+.main-h2 {
+    color: #666;
+    padding: 10px;
+}
+.main-section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section-article-data {
+    background-color: white;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    text-align: left;
+    padding: 10px;
+}
+div>b {
+    color: #666;
+}
+.fa-truck {
+    display: inline-block;
+    color: #39b54a;
+    padding: 12px 10px;
+    border: solid 1px;
+    border-radius: 100%;
+    margin: 0 10px 10px 0;
+}
+/* LOGIN */
+.main-login {
+    background-color:#ebebeb;
+    padding: 20px 0;
+    text-align: center;
+}
+.main-login>form>div>input {
+    padding: 10px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+.main-login>form>div input[type="submit"] {
+    width: 85vw;
+    background-color:#1259c3;
+    color: white;
+}
+/* REGISTER */
+.register-main{
+    background-color: #ebebeb;
+}
+.register-div {
+    background-color:#ebebeb;
+    padding: 10px 0;
+    text-align: center;
+}
+.register-div>input {
+    padding: 10px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+.register-h2 {
+    margin: 0 7.5vw;
+}
+.register-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 7.5vw;
+}
+.register-interest {
+    margin: 20px 7.5vw;
+}
+.register-interest input {
+    margin-right: 10px;
+}
+
+.input-user-photo {
+    margin: 20px 7.5vw;
+    width: 85vw;
+}
+.register-div>input[type="submit"] {
+    background-color:#1259c3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.register-div>input[type="reset"] {
+    background-color:#03264C;
+    color:#ebebeb;
+    padding: 10px 0;
+    text-align: center;
+}
+@media screen and (min-width:768px) { /* Tablet */
+    .font-size-prices{
+        padding-top: 0;
+    }
+    main {
+        padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile */
+        background-color:#ebebeb;
+        margin: auto;
+        text-align: center;
+    }
+    section { /* Se evita el borde derecho vacio */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .main-h2 {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .main-h2-offers {
+        margin-top: 20px;
+    }
+    .main-section-article {
+        width: 300px;
+        box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    }
+    .main-section-article-data {
+        background-color: white;
+        text-align: left;
+        padding: 10px 15px;
+        border-top: solid 1px #ebebeb;
+        margin-top: -3px;
+        margin-bottom: 0;
+    }
+    .main-section-article-data>div{
+        margin-top: 20px;
+        margin-left: -75px;
+        padding: 0;
+    }
+    .main-section-article>div b {
+    margin-left: 75px;
+    color: #666;
+    }
+    /* REGISTER */
+    .register-main {
+        padding: 20px 0;
+    }
+    .register-userphoto {
+        text-align: left;
+    }
+    .register-userphoto input {
+        margin: 20px 0;
+    }
+    .register-h2 {
+        text-align: left;
+        margin: 0;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 0 -7.5vw;
+    }
+    .register-interest-father input {
+        margin-left: -40px;
+    }
+    .register-label {
+        margin: 20px 0;
+    }
+    .register-main {
+        margin: 0 200px;
+    }
+    body {
+        background-color: #ebebeb;
+    }
+    .register-main input {
+        width: 100%;
+    }
+    /* LOGIN */
+    .main-login>form>div {
+        display: flex;
+        margin: 0 200px;
+    }
+}
+@media screen and (min-width:1024px) { /* Desktop - Evitamos inputs muy largos */
+    .register-main {
+        margin: 0 25vw;
+    }
+    .register-div {
+        width: 50vw;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 0;
+        width: 50vw;
+    }
+    .register-h2 {
+        width: 50vw;
+    }
+    .register-label {
+        width: 50vw;
+    }
+    .input-user-photo {
+        width: 50vw;
+        margin: 0;
+    }
+    .register-userphoto {
+        width: 50vw;
+    }
+    .register-interest {
+        width: 50vw;
+        margin: 0;
+    }
+    .user-profile-container {
+        width: 50vw;
+    }
+    .main-login  {
+        width: 75vw; 
+    }
+}
