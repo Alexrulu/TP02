@@ -20,19 +20,30 @@ h2 { /* Titulares */
 }
 .font-size-prices{ /* Precios */
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: 0px;
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 20px;
 }
 .font-size-discounts{ /* Descuentos */
     font-size: 16px;
     color: #39b54a;
+    display: inline-block;
+    width: 70%;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 20px;
 }
 .font-size-description{ /* Descripciones*/
     font-size: 16px;
 }
-/* HOME */
 .main-home {
     text-align: center;
     background-color: #ebebeb;
+    padding-bottom: 30px;
+}
+#banner{
+    display: none;
 }
 .main-h2 {
     color: #666;
@@ -44,23 +55,32 @@ h2 { /* Titulares */
     align-items: center;
 }
 .main-section-article-data {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background-color: white;
     width: 300px;
     margin-bottom: 10px;
     margin-top: 1px;
     text-align: left;
-    padding: 10px;
+    padding: 15px;
 }
 div>b {
     color: #666;
 }
 .fa-truck {
-    display: inline-block;
     color: #39b54a;
-    padding: 12px 10px;
+    padding: 6px 5px;
     border: solid 1px;
     border-radius: 100%;
-    margin: 0 10px 10px 0;
+    position: absolute;
+    font-size: 15px;
+    top: -15px;
+    right: 20px;
+}
+.price-discounts-container{
+    display: flex;
+    width: 100%;
 }
 /* LOGIN */
 .main-login {
@@ -126,14 +146,19 @@ div>b {
     text-align: center;
 }
 @media screen and (min-width:768px) { /* Tablet */
+    #banner {
+        display: block;
+        width: 100%;
+    }
     .font-size-prices{
         padding-top: 0;
     }
-    main {
+    .main-home {
         padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile */
         background-color:#ebebeb;
         margin: auto;
         text-align: center;
+        padding-bottom: 60px;
     }
     section { /* Se evita el borde derecho vacio */
         display: flex;
@@ -153,21 +178,7 @@ div>b {
         box-shadow: 0px 0px 10px rgb(180, 180, 180);
     }
     .main-section-article-data {
-        background-color: white;
-        text-align: left;
-        padding: 10px 15px;
-        border-top: solid 1px #ebebeb;
-        margin-top: -3px;
         margin-bottom: 0;
-    }
-    .main-section-article-data>div{
-        margin-top: 20px;
-        margin-left: -75px;
-        padding: 0;
-    }
-    .main-section-article>div b {
-    margin-left: 75px;
-    color: #666;
     }
     /* REGISTER */
     .register-main {
@@ -187,8 +198,13 @@ div>b {
         text-align: left;
         margin: 0 -7.5vw;
     }
-    .register-interest-father input {
-        margin-left: -40px;
+    .register-interest {
+        margin: 20px 7.5vw;
+    }
+    .register-interest input {
+        margin-right: 0px;
+        position: absolute;
+        left: -10%;
     }
     .register-label {
         margin: 20px 0;
@@ -208,17 +224,35 @@ div>b {
         margin: 0 200px;
     }
 }
-@media screen and (min-width:1024px) { /* Desktop - Evitamos inputs muy largos */
+@media screen and (min-width:1024px) { /* Para evitar 3 articulos por fila */
+    .main-home {
+        padding: 20px 14vw ;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .main-home {
+        padding: 20px 1vw;
+        padding-bottom: 60px;
+    }
     .register-main {
         margin: 0 25vw;
+    }
+    .main-login {
+        margin: auto;
     }
     .register-div {
         width: 50vw;
     }
     .register-interest-father {
         text-align: left;
-        margin: 0;
-        width: 50vw;
+        margin: 10px 0;
+        width: 50vw
+    }
+    .register-interest input {
+        margin-right: 0px;
+        position: absolute;
+        left: -10%;
     }
     .register-h2 {
         width: 50vw;
@@ -235,7 +269,7 @@ div>b {
     }
     .register-interest {
         width: 50vw;
-        margin: 0;
+        margin-left: 0;
     }
     .user-profile-container {
         width: 50vw;
