@@ -21,7 +21,6 @@ footer>section>div i {
 .footer-copyright {
     color: #666;
 }
-
 @media screen and (min-width:768px) { /* TABLET */
     html {
         background-color: white;
@@ -36,7 +35,6 @@ footer>section>div i {
 @media screen and (min-width:1280px) {
     footer > section {
         display: flex;
-        justify-content: center;
     }
     footer > section > div:first-child {
         width: 20%;
@@ -52,5 +50,8 @@ footer>section>div i {
     }
     footer>section div:hover .fa-solid{
         color: #03264C;
+    }
+    .footer-section {
+        height: 250px;
     }
 }

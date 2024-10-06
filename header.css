@@ -66,7 +66,9 @@ header>nav>ul>li>a{
 header>nav {
     display: none;
 }
-
+li {
+    list-style: none;
+}
 @media screen and (min-width:768px) { /* Tablet */
     header {
         padding: 0 5vw;
@@ -110,9 +112,7 @@ header>nav {
         gap: 15px;
         display: flex;
     }
-    li {
-        list-style: none;
-    }
+    
     .header-nav-ul1 {
         width: 45%;
         margin-left: 0;

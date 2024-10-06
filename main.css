@@ -18,6 +18,9 @@ p { /* Campos de texto */
 h2 { /* Titulares */
     font-size: 24px;
 }
+
+/* ----------------------- MAIN ----------------------- */
+
 .font-size-prices{ /* Precios */
     font-size: 18px;
     display: inline-block;
@@ -83,7 +86,9 @@ div>b {
     display: flex;
     width: 100%;
 }
-/* LOGIN */
+
+/* ----------------------- LOGIN ----------------------- */
+
 .main-login {
     background-color:#ebebeb;
     padding: 20px 0;
@@ -100,7 +105,9 @@ div>b {
     background-color:#1259c3;
     color: white;
 }
-/* REGISTER */
+
+/* ----------------------- REGISTER ----------------------- */
+
 .register-main{
     background-color: #ebebeb;
 }
@@ -147,6 +154,12 @@ div>b {
     text-align: center;
 }
 @media screen and (min-width:768px) { /* Tablet */
+
+    /* ----------------------- MAIN ----------------------- */
+    
+    body {
+        background-color: #ebebeb;
+    }
     #banner {
         display: block;
         width: 100%;
@@ -171,16 +184,18 @@ div>b {
         color: #666;
         margin-bottom: 20px;
     }
-    .main-h2-offers {
-        margin-top: 20px;
-    }
     .main-section-article {
         width: 300px;
     }
     .main-section-article-data {
         margin-bottom: 0;
     }
-    /* REGISTER */
+    .main-h2-offers {
+        margin-top: 20px;
+    }
+
+    /* ----------------------- REGISTER ----------------------- */
+
     .register-main {
         padding: 20px 0;
     }
@@ -212,56 +227,36 @@ div>b {
     .register-main {
         margin: 0 200px;
     }
-    body {
-        background-color: #ebebeb;
-    }
     .register-main input {
         width: 100%;
     }
-    /* LOGIN */
+
+    /* ----------------------- LOGIN ----------------------- */
+
     .main-login>form>div {
         display: flex;
         margin: 0 200px;
     }
 }
 @media screen and (min-width:1024px) { /* Para evitar 3 articulos por fila */
+
+    /* ----------------------- MAIN ----------------------- */
+
     .main-home {
         padding: 20px 14.5vw ;
         padding-bottom: 60px;
     }
-    /* Hover section, a partir de 1024px para evitar problemas con Tablets */
-    .main-section-article { 
-        box-shadow: none;
-        transition: box-shadow 0.1s ease-in;
-        position: relative;
-    }
-    .article-description {
-        display: none;
-    }
-    .main-section-article:hover .article-description, .main-section-article-data {
-        display: inline-block;
-        background-color: white;      
-        margin-bottom: 10px;
-        padding-bottom: 0;
-    }    
-    .main-section-article:hover {
-        box-shadow: inset 0px -40px 20px -10px rgba(255, 255, 255), 0px 0px 20px rgb(180, 180, 180); /* inset para evitar desbordamiento de sombra exterior */
-        transform: translateY(-10px);
-        z-index: 10;
-    }
-    .fa-truck {
-        transition: transform 0.5s ease;
-        transform: rotate(0deg);
-    }
-    .main-section-article:hover .fa-truck {
-        transform: rotate(-90deg);
+
+    /* ----------------------- LOGIN ----------------------- */
+
+    .main-login { /* evitamos invasion del footer*/
+        padding: 10vh 0;
     }
 }
 @media screen and (min-width:1280px) {
-    .main-home {
-        padding: 20px 1vw;
-        padding-bottom: 60px;
-    }
+
+    /* ----------------------- REGISTER ----------------------- */
+    
     .register-main {
         margin: 0 25vw;
     }
@@ -301,7 +296,54 @@ div>b {
     .user-profile-container {
         width: 50vw;
     }
+
+    /* ----------------------- LOGIN ----------------------- */
+
     .main-login  {
         width: 75vw; 
+    }
+    
+    /* ----------------------- MAIN ----------------------- */
+    
+    section {
+        height: 370px;
+    }
+    .main-home {
+        padding: 20px 1vw;
+        padding-bottom: 60px;
+    }
+    .font-size-discounts, .font-size-prices {
+        padding-bottom: 0;
+    }
+    .main-h2-offers {
+        margin-top: 0;
+    }
+    /* Hover section, a partir de 1280px para enfocarnos en los 4 articulos por fila, puede aplicarse en 2 articulos por fila pero debera corregir los margin-bottom para evitar saltos de linea, ademas se rompera la norma de 10px entre lineas de articulos. */
+    .main-section-article { 
+        box-shadow: none;
+        transition: box-shadow 0.1s ease-in;
+        position: relative;
+    }
+    .article-description {
+        display: none;
+    }
+    .main-section-article:hover {
+        box-shadow: inset 0px -40px 20px -10px rgba(255, 255, 255), 0px 0px 20px rgb(180, 180, 180); /* inset para evitar desbordamiento de sombra exterior */
+        transform: translateY(-10px);
+        z-index: 10;
+    }
+    .fa-truck {
+        transition: transform 0.5s ease;
+        transform: rotate(0deg);
+    }
+    .main-section-article:hover .fa-truck {
+        transform: rotate(-90deg);
+    }
+    .main-section-article:hover .article-description, .main-section-article-data {
+        display: inline-block;
+        background-color: white;
+    }
+    .main-section-article:hover .descr-container {
+        padding-top: 10px;
     }
 }
