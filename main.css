@@ -20,10 +20,10 @@ h2 { /* Titulares */
 }
 .font-size-prices{ /* Precios */
     font-size: 18px;
-    padding-top: 0px;
     display: inline-block;
     width: 30%;
     padding-bottom: 20px;
+    padding-top: 0;
 }
 .font-size-discounts{ /* Descuentos */
     font-size: 16px;
@@ -31,8 +31,8 @@ h2 { /* Titulares */
     display: inline-block;
     width: 70%;
     padding-left: 5px;
-    padding-top: 2px;
     padding-bottom: 20px;
+    padding-top: 2px;
 }
 .font-size-description{ /* Descripciones*/
     font-size: 16px;
@@ -64,6 +64,7 @@ h2 { /* Titulares */
     margin-top: 1px;
     text-align: left;
     padding: 15px;
+    padding-bottom: 15px;
 }
 div>b {
     color: #666;
@@ -175,7 +176,6 @@ div>b {
     }
     .main-section-article {
         width: 300px;
-        box-shadow: 0px 0px 10px rgb(180, 180, 180);
     }
     .main-section-article-data {
         margin-bottom: 0;
@@ -226,8 +226,35 @@ div>b {
 }
 @media screen and (min-width:1024px) { /* Para evitar 3 articulos por fila */
     .main-home {
-        padding: 20px 14vw ;
+        padding: 20px 14.5vw ;
         padding-bottom: 60px;
+    }
+    /* Hover section, a partir de 1024px para evitar problemas con Tablets */
+    .main-section-article { 
+        box-shadow: none;
+        transition: box-shadow 0.1s ease-in;
+        position: relative;
+    }
+    .article-description {
+        display: none;
+    }
+    .main-section-article:hover .article-description, .main-section-article-data {
+        display: inline-block;
+        background-color: white;      
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }    
+    .main-section-article:hover {
+        box-shadow: inset 0px -40px 20px -10px rgba(255, 255, 255), 0px 0px 20px rgb(180, 180, 180); /* inset para evitar desbordamiento de sombra exterior */
+        transform: translateY(-10px);
+        z-index: 10;
+    }
+    .fa-truck {
+        transition: transform 0.5s ease;
+        transform: rotate(0deg);
+    }
+    .main-section-article:hover .fa-truck {
+        transform: rotate(-90deg);
     }
 }
 @media screen and (min-width:1280px) {
